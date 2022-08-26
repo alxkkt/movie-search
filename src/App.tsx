@@ -90,7 +90,7 @@ const App = () => {
         <Searchbar onSubmit={changeQuery} />
       </Header>
       <Toaster />
-      {items.length && (
+      {Boolean(items.length) && (
         <MovieGallery items={items}>
           <Button text="Load More" loadMore={loadMore} />
         </MovieGallery>
