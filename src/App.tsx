@@ -68,7 +68,7 @@ const App = () => {
 
   const changeQuery = (q: string) => {
     if (!q) {
-      toast.custom('Search field must contain at least 1 symbol :)', {
+      toast.error('Search field must contain at least 1 symbol :)', {
         position: "top-right",
       })
       return;
